@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheets" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title>Либумбик и сравнения</title>
 </head>
 <body>
-    <p class="challenge1"></p>
+    <div class="container">
+        <p class="title">ЧТО БОЛЬШЕ?</p>
+        <div class="challenges">    
+            <label for="challenge1">число которое</label>
+            <p name="challenge1" class="challenge1"></p>
+            <label for="challenge2">или число которое</label>
+            <p name="challenge2" class="challenge2"></p>
+            
+        </div>
+        <div class="responses">
+            <select class="selectResponse">
+                <option value="">выбрать</option>
+                <option value="<">< меньше</option>
+                <option value=">">> больше</option>
+            </select>
+            <div class="containerBy">
+                <label for="responseBy">на</label>
+                <input name="responseBy" class="responseBy" type="text">
+            </div>
+            <div class="containerTimes">
+                <label class="labelTimesBefore" for="responseTimes">в</label>
+                <input name="responseTimes" class="responseTimes" type="text">
+                <label class="labelTimesAfter" for="responseTimes">раз</label>
+            </div>
+        </div>
+
+        <!-- <p class="challengeDisplayAB"></p>
+        <p class="challengeDisplayCD"></p> -->
+
+        <p class="checkResultMoreLess"></p>
+    <div class="buttons">
+        <button class="checkButton">Проверить</button>
+        <button class="refreshButton">Обновить</button>
+    </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
